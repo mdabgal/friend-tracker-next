@@ -28,13 +28,13 @@ const Footer = () => {
 
           <div className="flex justify-center gap-4">
             <div className=" text-black p-2 rounded-full cursor-pointer">
-                <Image src={instagram} ></Image>
+                <Image src={instagram} alt='' ></Image>
             </div>
             <div className=" text-black p-2 rounded-full cursor-pointer">
-             <Image src={facebook}></Image>
+             <Image src={facebook} alt=''></Image>
             </div>
             <div className=" text-black p-2  rounded-full cursor-pointer">
-              <Image src={twitter}></Image>
+              <Image src={twitter} alt=''></Image>
             </div>
           </div>
         </div>

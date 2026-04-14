@@ -1,16 +1,17 @@
 import Banner from "@/components/Banner";
-import Footer from "@/components/Footer";
-import Image from "next/image";
+import Friends from "@/components/Friends";
 
-export default function Home() {
+export default async function Home() {
+  const res = await fetch("http://localhost:3000/data.json", {
+    cache: "no-store",
+  });
+
+  const friends = await res.json(); // ✅ define করা হলো
+
   return (
     <main>
-
-        <Banner/>
-       
-
+      <Banner />
+      <Friends friends={friends} />
     </main>
-
-    
   );
 }

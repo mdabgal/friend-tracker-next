@@ -5,7 +5,7 @@ import { Plus } from "lucide-react";
 export default function Banner() {
   return (
     <section className="bg-[#FBFAFc]" >
-      <div className="max-w-7xl w-full mx-auto   border-b border-gray-200 py-10 px-4">
+      <div className="max-w-7xl w-full mx-auto   border-b border-gray-200 py-20 px-4">
   
       <div className="text-center max-w-1120 mx-auto">
         <h1 className="text-4xl font-bold  mb-5">

@@ -25,7 +25,7 @@ export default function QuickActions({ friend }) {
 
     toast.success(`${type} added!`);
 
-    router.push("/timeline"); // optional
+    router.push("/timeline");
   };
 
   return (

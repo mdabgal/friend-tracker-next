@@ -24,7 +24,7 @@ export default async function FriendDetails({ params }) {
 
       <div className="bg-white rounded-xl shadow p-6 grid md:grid-cols-3 gap-6">
 
-        {/* LEFT SIDE */}
+       
         <div className="text-center border-r pr-4">
 
           <img
@@ -34,7 +34,6 @@ export default async function FriendDetails({ params }) {
 
           <h2 className="mt-3 font-semibold">{friend.name}</h2>
 
-          {/* STATUS */}
           <span className={`text-xs px-3 py-1 rounded-full ${
             friend.status === "overdue"
               ? "bg-red-100 text-red-600"
@@ -53,7 +52,7 @@ export default async function FriendDetails({ params }) {
             {friend.email}
           </p>
 
-          {/* BUTTONS */}
+         
           <div className="mt-4 space-y-2">
             <button className="w-full flex justify-center items-center gap-2 border border-gray-50 py-2 rounded shadow bg-white">
               <BellRing size={18} />  Snooze 2 Weeks
@@ -70,7 +69,7 @@ export default async function FriendDetails({ params }) {
 
         </div>
 
-        {/* RIGHT SIDE */}
+      
         <div className="col-span-2 space-y-6">
 
           {/* STATS */}
@@ -105,7 +104,7 @@ export default async function FriendDetails({ params }) {
 
           </div>
 
-    {/* Relationship Goal */}
+    
        <div className="border border-gray-100 p-4 shadow rounded">
         <div className="flex justify-between items-center">
             <h4 className="font-semibold mb-3">Relationship Goal</h4>
@@ -114,7 +113,7 @@ export default async function FriendDetails({ params }) {
 
 </div>
  
-          {/* QUICK ACTION */}
+        
           <div className="border border-gray-100 p-4 rounded">
             <h4 className="font-semibold mb-3">Quick Check-In</h4>
 

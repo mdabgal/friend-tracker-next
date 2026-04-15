@@ -1,3 +1,6 @@
+import QuickActions from "@/components/QuickActions";
+import { Archive, BellRing, MessageSquareMore, PhoneCall, Trash2, Video } from "lucide-react";
+
 export default async function FriendDetails({ params }) {
   // ✅ NEW RULE: params await করতে হবে
   const { id } = await  params;
@@ -17,7 +20,7 @@ export default async function FriendDetails({ params }) {
   }
 
   return (
-    <div className="max-w-5xl mx-auto p-6">
+    <div className="max-w-5xl mx-auto bg-[#FBFAFC] p-6">
 
       <div className="bg-white rounded-xl shadow p-6 grid md:grid-cols-3 gap-6">
 
@@ -52,16 +55,16 @@ export default async function FriendDetails({ params }) {
 
           {/* BUTTONS */}
           <div className="mt-4 space-y-2">
-            <button className="w-full border py-2 rounded">
-              Snooze 2 Weeks
+            <button className="w-full flex justify-center items-center gap-2 border border-gray-50 py-2 rounded shadow bg-white">
+              <BellRing size={18} />  Snooze 2 Weeks
             </button>
 
-            <button className="w-full border py-2 rounded">
-              Archive
+            <button className="w-full flex justify-center items-center gap-2 border border-gray-50 py-2 rounded shadow bg-white">
+               <Archive size={18}/> Archive
             </button>
 
-            <button className="w-full border py-2 rounded text-red-500">
-              Delete
+            <button className="w-full flex items-center justify-center border border-gray-50 py-2 rounded gap-2 text-red-500 shadow bg-white">
+            <Trash2 size={18}/>  Delete
             </button>
           </div>
 
@@ -103,30 +106,19 @@ export default async function FriendDetails({ params }) {
           </div>
 
     {/* Relationship Goal */}
-       <div className="border p-4 rounded">
+       <div className="border border-gray-100 p-4 shadow rounded">
+        <div className="flex justify-between items-center">
             <h4 className="font-semibold mb-3">Relationship Goal</h4>
+            <button className="border border-1 py-1 px-3 border-gray-200 bg-[#F8FAFC] rounded">Edit</button>
+            </div>
 
 </div>
-
+ 
           {/* QUICK ACTION */}
-          <div className="border p-4 rounded">
+          <div className="border border-gray-100 p-4 rounded">
             <h4 className="font-semibold mb-3">Quick Check-In</h4>
 
-            <div className="grid grid-cols-3 gap-3">
-
-              <button className="border p-3 rounded hover:bg-gray-100">
-                📞 Call
-              </button>
-
-              <button className="border p-3 rounded hover:bg-gray-100">
-                💬 Text
-              </button>
-
-              <button className="border p-3 rounded hover:bg-gray-100">
-                🎥 Video
-              </button>
-
-            </div>
+           <QuickActions friend={friend} />
           </div>
 
         </div>

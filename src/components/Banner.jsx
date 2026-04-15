@@ -8,7 +8,8 @@ export default function Banner() {
       <div className="max-w-7xl w-full mx-auto   border-b border-gray-200 py-20 px-4">
   
       <div className="text-center max-w-1120 mx-auto">
-        <h1 className="text-4xl font-bold  mb-5">
+       
+   <h1 className="text-4xl font-bold  mb-5">
         Friends to keep close in your life
         </h1>
 
@@ -26,23 +27,23 @@ relationships that matter most.
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 max-w-5xl mx-auto">
         
         <div className="bg-white p-5  rounded shadow text-center">
-          <h2 className="text-2xl font-bold text-[#244D3F] ">10</h2>
+      <h2 className="text-2xl font-bold text-[#244D3F] ">10</h2>
           <p className="text-[#64748B]">Total Friends</p>
         </div>
 
         <div className="bg-white p-5 rounded shadow text-center">
           <h2 className="text-2xl font-bold text-[#244D3F]">3</h2>
           <p className="text-[#64748B]">New Requests</p>
-        </div>
-
+              </div>
+   
         <div className="bg-white p-5 rounded shadow text-center">
           <h2 className="text-2xl font-bold text-[#244D3f]">6</h2>
-          <p className="text-[#64748B]">Online Now</p>
-        </div>
+        <p className="text-[#64748B]">Online Now</p>
+          </div>
 
         <div className="bg-white p-5 rounded shadow text-center">
-          <h2 className="text-2xl font-bold text-[#244D3f]">12</h2>
-          <p className="text-[#64748B]">Groups</p>
+      <h2 className="text-2xl font-bold text-[#244D3f]">12</h2>
+           <p className="text-[#64748B]">Groups</p>
         </div>
 
       </div>

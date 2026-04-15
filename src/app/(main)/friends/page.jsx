@@ -17,13 +17,15 @@ export default function FriendsPage() {
       <h1 className="text-xl font-bold mb-4">Friends List</h1>
 
       <div className="grid grid-cols-2 gap-4">
-        {friends.map((f) => (
-          <Link key={f.id} href={`/friends/${f.id}`}>
+       {friends.map((f) => (
+        <Link key={f.id} href={`/friends/${f.id}`}>
             <div className="p-4 bg-white shadow rounded cursor-pointer">
-              <img src={f.picture} className="w-12 h-12 rounded-full" />
-              <h2>{f.name}</h2>
+      <img src={f.picture} className="w-12 h-12 rounded-full" />
+            
+            
+           <h2>{f.name}</h2>
             </div>
-          </Link>
+            </Link>
         ))}
       </div>
     </div>

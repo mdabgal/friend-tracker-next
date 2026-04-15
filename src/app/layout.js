@@ -1,5 +1,6 @@
 
 
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 import LayoutWrapper from "@/components/LayoutWrapper";
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
        
             <LayoutWrapper>{children}</LayoutWrapper>
         </div>
+        <Toaster position="top-right"/>
         </body>
       
     </html>

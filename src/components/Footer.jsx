@@ -31,7 +31,7 @@ const Footer = () => {
                 <Image src={instagram} alt='' ></Image>
             </div>
             <div className=" text-black p-2 rounded-full cursor-pointer">
-             <Image src={facebook} alt=''></Image>
+         <Image src={facebook} alt=''></Image>
             </div>
             <div className=" text-black p-2  rounded-full cursor-pointer">
               <Image src={twitter} alt=''></Image>

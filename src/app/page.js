@@ -6,7 +6,7 @@ export default async function Home() {
     cache: "no-store",
   });
 
-  const friends = await res.json(); // ✅ define করা হলো
+  const friends = await res.json();
 
   return (
     <main>

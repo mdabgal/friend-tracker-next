@@ -36,21 +36,21 @@ export default function Friends({ friends }) {
                   ))}
                 </div>
 
-                <div className="mt-3">
-                  <span
-                    className={`text-xs px-3 py-1 rounded-full font-medium ${
-                      friend.status === "overdue"
-                        ? "bg-red-100 text-red-600"
-                        : friend.status === "almost due"
-                        ? "bg-yellow-100 text-yellow-600"
-                        : "bg-[#285943] text-white"
+          <div className="mt-3">
+               <span
+          className={`text-xs px-3 py-1 rounded-full font-medium ${
+            friend.status === "overdue"
+                ? "bg-red-100 text-red-600"
+                 : friend.status === "almost due"
+                 ? "bg-yellow-100 text-yellow-600"
+                : "bg-[#285943] text-white"
                     }`}
                   >
-                    {friend.status === "almost due"
-                      ? "Almost Due"
-                      : friend.status === "on-track"
-                      ? "On-Track"
-                      : "Overdue"}
+              {friend.status === "almost due"
+                 ? "Almost Due"
+                : friend.status === "on-track"
+                ? "On-Track"
+                   : "Overdue"}
                   </span>
                 </div>
 

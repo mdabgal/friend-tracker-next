@@ -34,3 +34,36 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
+
+
+# Friendship Tracker App
+
+##  Project Name
+Friendship Tracker App
+
+---
+
+##  Description
+This is a friendship management web application built using Next.js.  
+It helps users track friends and their interactions like calls, texts, and video chats.  
+It also shows interaction history and analytics using charts.
+
+---
+
+##  Technologies Used
+- Next.js
+- React.js
+- Tailwind CSS
+- Recharts
+- Lucide React Icons
+
+---
+
+##  Key Features
+-  Friend list from JSON data
+-  Timeline of interactions (Call, Text, Video)
+-  Friendship analytics using Pie Chart

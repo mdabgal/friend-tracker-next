@@ -23,7 +23,7 @@ export default function QuickActions({ friend }) {
       JSON.stringify([newEntry, ...existing])
     );
 
-    toast.success(`${type} added!`);
+    toast.success(`${type} with ${friend.name} added!`);
 
     router.push("/timeline");
   };

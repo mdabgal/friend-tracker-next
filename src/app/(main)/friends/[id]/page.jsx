@@ -89,7 +89,7 @@ export default async function FriendDetails({ params }) {
                 {friend.goal}
               </h3>
               <p className="text-sm text-gray-500">
-                Goal
+                Goal (Days)
               </p>
             </div>
 
@@ -107,9 +107,12 @@ export default async function FriendDetails({ params }) {
     
        <div className="border border-gray-100 p-4 shadow rounded">
         <div className="flex justify-between items-center">
-            <h4 className="font-semibold mb-3">Relationship Goal</h4>
+            <h3 className="font-semibold mb-3">Relationship Goal</h3>
             <button className="border border-1 py-1 px-3 border-gray-200 bg-[#F8FAFC] rounded">Edit</button>
+          
             </div>
+
+             <p><span className="text-[#64748B] text-[16px]">Connect every</span> <span className="font-bold">{friend.goal} days</span></p>
 
 </div>
  

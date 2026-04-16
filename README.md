@@ -1,3 +1,44 @@
+
+
+
+# Friendship Tracker App
+
+##  Project Name:
+Friendship Tracker App
+
+---
+
+##  Description
+This is a friendship management web application built using Next.js.  
+It helps users track friends and their interactions like calls, texts, and video chats.  
+It also shows interaction history and analytics using charts.
+
+---
+
+##  Technologies Used
+- Next.js
+- React.js
+- Tailwind CSS
+- Recharts
+- Lucide React Icons
+
+---
+
+##  Key Features
+-  Friend list from JSON data
+-  Timeline of interactions (Call, Text, Video)
+-  Friendship analytics using Pie Chart
+
+
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -40,30 +81,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 
-# Friendship Tracker App
-
-##  Project Name
-Friendship Tracker App
-
----
-
-##  Description
-This is a friendship management web application built using Next.js.  
-It helps users track friends and their interactions like calls, texts, and video chats.  
-It also shows interaction history and analytics using charts.
-
----
-
-##  Technologies Used
-- Next.js
-- React.js
-- Tailwind CSS
-- Recharts
-- Lucide React Icons
-
----
-
-##  Key Features
--  Friend list from JSON data
--  Timeline of interactions (Call, Text, Video)
--  Friendship analytics using Pie Chart

@@ -78,7 +78,8 @@ export default function TimelinePage() {
              {item.title}
                 </h3>
                 <p className="text-xs text-gray-500">
-                  {item.date}
+                { new Date(item.date).toLocaleDateString()}
+
                 </p>
               </div>
             </div>

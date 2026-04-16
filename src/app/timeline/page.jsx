@@ -7,16 +7,22 @@ import { PhoneCall, MessageSquareMore, Video } from "lucide-react";
 export default function TimelinePage() {
   const [timeline, setTimeline] = useState([]);
   const [filter, setFilter] = useState("All");
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem("timeline")) || [];
     setTimeline(data);
   }, []);
 
-  const filteredData =
-    filter === "All"
-      ? timeline
-      : timeline.filter((item) => item.type === filter);
+  const filteredData = timeline.filter((item) => {
+  const matchFilter = filter === "All" || item.type === filter;
+
+  const matchSearch =
+    item.title.toLowerCase().includes(search.toLowerCase()) ||
+    item.type.toLowerCase().includes(search.toLowerCase());
+
+  return matchFilter && matchSearch;
+});
 
   const getIcon = (type) => {
     if (type === "Call") return <PhoneCall size={18} />;
@@ -31,9 +37,17 @@ export default function TimelinePage() {
 
       <h1 className="text-2xl font-bold mb-4">Timeline</h1>
 
+
+<input
+  type="text"
+  placeholder="Search by name or type..."
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+  className="border border-gray-300 px-4 py-2 rounded mb-3 w-full"
+/>
     
       <select
-        className="border  border-gray-400 px-22 py-2 rounded mb-5 "
+        className="border  border-gray-300 px-22 py-2 rounded mb-5 "
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
       >

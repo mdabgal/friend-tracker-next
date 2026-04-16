@@ -49,14 +49,18 @@ export default function StatsPage() {
   Friendship Analytics
         </h1>
 
-        <div className="flex justify-center shadow-2xl w-full p-5 bg-white rounded-lg">
+        <div className=" shadow-2xl w-full p-5 bg-white rounded-lg">
+          <h2 className="text-[20px] text-[#244D3F] font-medium">
+            By Interaction Type
+          </h2>
+          <div className="flex justify-center">
     
     <ResponsiveContainer width="100%" height={600}>
             <PieChart>
               <Pie
                 data={data}
-              innerRadius={100}
-            outerRadius={150}
+              innerRadius={120}
+            outerRadius={180}
                 paddingAngle={5}
             cornerRadius={10}
                 dataKey="value"
@@ -71,6 +75,7 @@ export default function StatsPage() {
               <Legend />
             </PieChart>
           </ResponsiveContainer>
+          </div>
         </div>
       </div>
     </div>

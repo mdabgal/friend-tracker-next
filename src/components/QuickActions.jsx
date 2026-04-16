@@ -47,7 +47,8 @@ export default function QuickActions({ friend }) {
 
       <button
         onClick={() => handleAction("Video")}
-        className="border flex justify-center items-center gap-2 p-3 rounded hover:bg-gray-100"
+       
+     className="border flex justify-center items-center gap-2 p-3 rounded hover:bg-gray-100"
       >
         <Video size={18} /> Video
       </button>

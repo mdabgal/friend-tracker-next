@@ -27,7 +27,7 @@ relationships that matter most.
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 max-w-5xl mx-auto">
         
         <div className="bg-white p-5  rounded shadow text-center">
-      <h2 className="text-2xl font-bold text-[#244D3F] ">10</h2>
+      <h2 className="text-2xl font-bold text-[#244D3F] ">12</h2>
           <p className="text-[#64748B]">Total Friends</p>
         </div>
 

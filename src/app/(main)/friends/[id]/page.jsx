@@ -2,10 +2,10 @@ import QuickActions from "@/components/QuickActions";
 import { Archive, BellRing, MessageSquareMore, PhoneCall, Trash2, Video } from "lucide-react";
 
 export default async function FriendDetails({ params }) {
-  // ✅ NEW RULE: params await করতে হবে
+
   const { id } = await  params;
 
-  const res = await fetch("http://localhost:3000/data.json", {
+  const res = await fetch("/data.json", {
     cache: "no-store",
   });
 

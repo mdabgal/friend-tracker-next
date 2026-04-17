@@ -5,7 +5,7 @@ export default async function FriendDetails({ params }) {
 
   const { id } = await  params;
 
-  const res = await fetch("/data.json", {
+  const res = await fetch("https://friend-tracker-next-b36k.vercel.app/data.json", {
     cache: "no-store",
   });
 

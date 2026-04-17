@@ -7,7 +7,8 @@ export default function FriendsPage() {
   const [friends, setFriends] = useState([]);
 
   useEffect(() => {
-    fetch("/data.json")
+    fetch("http://localhost:3000/data.json", {
+    cache: "no-store"})
       .then((res) => res.json())
       .then((data) => setFriends(data));
   }, []);

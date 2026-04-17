@@ -3,13 +3,17 @@ import { Archive, BellRing, MessageSquareMore, PhoneCall, Trash2, Video } from "
 
 export default async function FriendDetails({ params }) {
 
-  const { id } = await  params;
+  const { id } = await params;
 
-  const res = await fetch("https://friend-tracker-next-b36k.vercel.app/data.json", {
+  const res = await fetch("http://localhost:3000/data.json", {
     cache: "no-store",
   });
 
   const friends = await res.json();
+
+  if (!Array.isArray(friends)) {
+  return <h1>Invalid data</h1>;
+}
 
   const friend = friends.find(
     (f) => String(f.id) === String(id)
